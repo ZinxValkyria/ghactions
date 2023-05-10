@@ -12,8 +12,8 @@ jobs:
       - name: Copy files via SSH
         uses: appleboy/scp-action@master
         with:
-          host: ${{ secrets.SERVER_HOST }}
-          username: ${{ secrets.SERVER_USER }}
-          password: ${{ secrets.SERVER_PASSWORD }}
+          host: 3.10.151.108
+          username: ec2-user
+          password: "MIIEogIBAAKCAQEApzp+eW3luyJbYxGg6TsiE+pelTc/0BLFU1blhKU9yc01Tbd8IcfXqXV6HFCcyx0MeZXwD9aiWGGmsuno4KALku2aAOk5qdiAO/kKyVdyyUVPc7Nf0/voVIu2ax33CMchGyQlxxqCgLGMTApfscuINc7GXAnZbpAjIy8a/Tot1j5AVGBrw+/gYFII40eynrl230kNoQwQiTTE9/N1xbwJucV6S03PHul5KGxpSRV5lVb71UapHzPI1Mh5pDU6AaWsp8lrtCUCuaryUkmkQViMrWBzXfhod0rB6gfPz6Gm5NQpATzlRfJ+osi4pY7k2MMyA8f3ex9dmL7I75Z+UzOVCQIDAQABAoIBAC619hHxEpR8+k3n5KyBKfmqI5VGg3qZY6jtwtqUVXgC6/qzX+cHrUPWXq9+DO3nRU7JBO9Hor1ROYEMOVJVIiZ+W+AZRVQd92PJIqwu0w9JXvIQjpnl6XWEOQYerpwzExpDtJGy4/USov+yfhxpn7h384xN7AAoHsh7JezJzXfkIvMRWpw34DnteUkbxiu0i2VWkhmJoIVZk5+n09kumDX8oXmKPrCOpvPdYH5GQUj5Di/XLDYDcRd88hUaiQe9vRjyf3oaBLKm1a4SvKVpAo/4JCxUsSSAbtuQhipjxjbgl0R/fWqufgF4yu1R4sbp6ZmCb2kQxkJarba1j7qQVIkCgYEA7FRUkVPk2N9pYxupER+OlNeuLJiuA4jfosH6pIlS9wjFoU5KcGz2PIO5VNEXOTkP8HMnWcBLKYeeFo/qxcdEwVWCTnRo/5oqAyMu8De9byP911uo9439C1xJog2WCYSXUXOQ90cRUVfxtJ9goLsxikz8HBp531nxA3gPzrIS9qsCgYEAtSXFrwIBoCIKzwaecfTvUlOnMXhNk4S1VVIk9ZTevzlO8450q0NQaIwjXtCsHNnFACCSbfrsqY2T3TDsJAmBjBr9IWFGuiSEQgsaN73JbrBdNZum73RJjf+rTa+PCFH2VIgRNN3ZedDiT0JUo13cKER8lHuwmzSU/k70CeIusxsCgYAYw0FVNPgurUIqq1RMwgS7ndnXPGxHXIkqUa8EnIr/7YBfxYdRPmmSr660r3ACg/Mim75MzjRR9q7e6FeOP7H5nA8aT2JNHgc26vHZI84KnjfT3/vVbKBOF25zt364IpeEZlqTPnQXFOLzrRt/2/1141krTK7mc1MorOTjII+SHwKBgEqKeIZDdRfH6lq2hoyuFazy72HT91g0y8mIO90ynVZi5rIidK/kyzm6MPPbOnfExOQAg0DueGRs9eOXNhS+NKjKkk8iEFCYpjPnDarSVglOWYytuEvgtkPQaVVWYK0zzQGL3Ei84bjW08l5qgpvnSCUzg7rtwim4oijRJiskjrxAoGAJldA1HgARmSUCo3H3F7Wmjhx1/fUe2/yAQgcuM+Sw7DQafwOt8PGVqPlunPCVa3U6Wqw5VEQjDPADFERo2EqqZgoUTVKR9tKKOIw+7ReMKipL1CyVwTvRQyKxpJcnv5amiYW3JEvuDz+nKK7X+yhkXqG8b8dVx9vbjVtPuZKS34="
           source: "src/"
           target: "/var/www/"
